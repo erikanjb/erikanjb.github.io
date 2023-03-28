@@ -5,20 +5,23 @@ html {
     box-sizing: inherit;
 }
 body {
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-    background-color: rgb(193, 212, 253);
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #030308;
     
     
 }
-h1, h2, h3, h4, h5, h6 {
-    font-family: 'Kavivanar', cursive;
+div {
+    font-family: monospace;
     font-weight: normal;
+    color: #05d9e8;
+    background-color: #01012b;
+    text-align: center;
+    border: 2px solid #ff2a6d;
+    margin-right: 8px;
+    margin-left: 8px;
+    margin-top: 40px;
 }
-h2 {
-    font-size: 2rem;
-    color: #A51F10;
-    margin: 0;
-}
+
 a {
     color: #da0000;
     text-decoration: none;
@@ -26,34 +29,26 @@ a {
 a:hover {
     text-decoration: underline;
 }
-.wrapper {
-    width: 80%;
-    margin: 0 auto;
-}
+
 header {
     display: flex;
     flex-flow: row nowrap;
     justify-content: space-between;
+    border: 1px solid #ff2a6d;
+    
+    
     
 }
-.leftheader {
-    flex-basis: 40%;
-    text-align: right;
-    padding-right: 0.5rem;
+legend, fieldset{
+    text-align: center;
+    border: 2px solid #d1f7ff;
+    margin-top: 80px;
+    margin-bottom: 40px;
+    margin-left: 8px;
+    margin-right: 8px;
+    font-family: monospace;
 }
-.rightheader {
-    flex-basis: 60%;
-    margin-top: 3.75rem;
-    padding-left: 0.5rem;
-}
-.rightheader h1 {
-    margin: 0;
-    color: #DA0090;
-    font-size: 3em;
-}
-.rightheader p {
-    margin-top: -0.5rem;
-}
+
 
 nav ul {
     margin: 0;
@@ -66,13 +61,13 @@ nav li {
 }
 nav a {
     text-decoration: none;
-    color: #73352E;
+    color: #05d9e8;
     display: block;
     padding: 0.5rem 1rem;
 }
 nav a:hover {
-    background-color: black;
-    color: #84DE37
+    background-color: #d1f7ff;
+    color: #005678;
 }
 
 
@@ -81,7 +76,8 @@ footer {
     padding: 1rem 0 3rem 0;
     text-align: center;
     font-size: 0.8rem;
-    border: 1px solid #A61F11;
+    
+    
 }
 footer ul {
     margin: 0;
@@ -92,6 +88,11 @@ footer li {
     display: inline-block;
 }
 
-article img {
-    width: 30%;
+article{
+    border: 1px solid white;
+    background-color: #d1f7ff;
+    margin-left: 8px;
+    margin-right: 8px;
+    text-align: center;
+    
 }
