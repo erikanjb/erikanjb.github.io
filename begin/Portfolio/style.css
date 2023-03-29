@@ -134,3 +134,12 @@ article{
 .instagram {
     color: #ff2a6d;
 }
+footer a{
+    text-decoration: none;
+    color:#d1f7ff;
+
+}
+
+footer a:hover {
+    background-color:#ff2a6d;
+}
