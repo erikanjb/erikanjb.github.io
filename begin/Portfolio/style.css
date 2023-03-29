@@ -96,3 +96,41 @@ article{
     text-align: center;
     
 }
+
+
+.material-symbols-outlined {
+  font-variation-settings:
+  'FILL' 0,
+  'wght' 400,
+  'GRAD' 0,
+  'opsz' 48
+}
+.facebook {
+
+    color: #2011eb;
+    
+}
+.footer {
+    color: white;
+    background-color: #01012b;
+
+}
+.youtube {
+    color: #da0000;
+}
+
+.whatsapp {
+    color: rgb(72, 250, 72);
+}
+
+.github {
+    color: black;
+    
+}
+
+.twitter {
+    color: aqua;
+}
+.instagram {
+    color: #ff2a6d;
+}
