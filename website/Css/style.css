@@ -150,7 +150,7 @@ nav [class*="fa-"]:hover {
     background-color: rgb(151, 248, 248);
 }
 
-@media (min-width: 720px){
+@media (min-width: 1200px){
  nav{
     max-width: 1200px;
     margin: 0 auto;
@@ -214,7 +214,7 @@ nav [class*="fa-"]:hover {
     padding: 1rem;
 }
 
-@media (min-width: 720px) {
+@media (min-width: 1200px) {
     article {
         display:grid;
         grid-template-columns: repeat(10, 1fr);
@@ -264,7 +264,7 @@ footer ul li a {
     text-decoration: none;
 }
 
-@media (min-width: 720px) {
+@media (min-width: 1200px) {
     nav {
         max-width: 1200px;
         margin: 0 auto;
