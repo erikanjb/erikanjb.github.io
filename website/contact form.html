@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link href="style.css" rel="stylesheet">
+    <title>Contact Form</title>
+</head>
+<body>
+    <div class="wrapper">
+		<section>
+			<h1>Contact Form</h1>
+			<p>Fill out the form below to get in contact with me.</p>
+		
+		<form action="https://e3vwdl4bpd.execute-api.us-west-2.amazonaws.com/default/API2SES" method="post">
+			<input type="hidden" name="send_to" value="erikanb33@gmail.com">
+			<fieldset>
+			<legend>Your contact information</legend>
+				<label for="name">Your name</label> 
+				<input type="text" id="name" name="name" placeholder="Enter your name">
+			
+				<label for="phone">Phone number</label> 
+				<input type="tel" id="phone" name="phone"
+				placeholder="Dont forget your area code">
+			
+				<label for="email">Email</label> 
+				<input type="email" id="email" name="email" placeholder="Enter your email address"> 
+			</fieldset>
+        
+ 
+  
+			<p>Special requests:</p>
+			<textarea id="comments" name="comments" placeholder="tell me all your secrets"></textarea>
+			
+		<label>
+			<input type="checkbox" value="subscribe" name="subscribe" id="subscribe" checked>Add me to your email list	
+		</label>	
+					
+	</fieldset>	
+	<button type="submit">Submit</button>
+		</form>
+        </section>
+		<aside>
+			<h3>Our Location</h3>
+			<address>
+				Western Africa.
+			</address>
+		</aside>
+	</div>
+	<iframe src=""></iframe>
+	<script src="js/forms.js"></script>
+</body>
+</html>
