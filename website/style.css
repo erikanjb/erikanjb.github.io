@@ -218,7 +218,6 @@ figcaption ul{
 }
 .aboutme h2{
     text-align: center;
-    color: var(--red);
 }
 .aboutme {
     text-align: left;
@@ -258,9 +257,10 @@ figcaption ul{
         padding: 2rem 0;
     }
     .ident {
+        margin-top: 1rem;
         display: flex;
+        flex-flow: row wrap;
         line-height: 1rem;
-        font-size: 1rem;
     }
 }
 
@@ -278,7 +278,6 @@ figcaption ul{
 
 img {
     width: 100%;
-    padding: 1rem 0;
     margin: 1rem;
 }
 
