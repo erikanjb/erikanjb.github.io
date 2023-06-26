@@ -1,0 +1,291 @@
+/* Variables declared here are for the color of the page, and the font stack and sizes. */
+:root {
+    --black: black;
+    --blue: #1100FF;
+    --hotblue: blue;
+    --hotblue: #6e64f8;
+    --yellow: #F7FF00;
+    --hotyellow: yellow;
+    --white: white ;
+    --red: #FF0009;
+    --font-size: 1.3rem;  
+}
+
+/* border box model*/
+html {
+    box-sizing: border-box;
+}
+*, *::before, *::after {
+    box-sizing: inherit;
+}
+
+/* generic styles for the page */
+body {
+    padding: 0;
+    margin: 0;
+    font-family: 'Raleway', sans-serif;
+    background-color: var(--white);
+    font-size: var(--font-size);
+}
+
+h1, h2, h3 {
+    margin: 0;
+   font-family: 'Raleway', sans-serif;
+}
+
+a {
+    color: var(--blue);
+}
+a:hover {
+    color: var(--hotblue);
+    text-decoration: none;
+}
+
+/* styles for the intro section of the page */
+#intro {
+    padding :4rem 1rem 10rem 1rem;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+#intro p {
+    font-size: 1rem;
+    line-height: 1.5;
+}
+#inro .name {
+    font-family: 'Open Sans', sans-serif;
+}
+.name span {
+    font-family: 'Raleway', sans-serif;
+    font-size: 4rem;
+    color: var(--blue);
+    display: block;
+}
+#intro h2 {
+    font-size: 4rem;
+    font-weight: normal;
+}
+/* Project section */
+.projects {
+    background-color: var(--hotblue);
+    color: var(--white);
+    padding: 4rem 1rem;
+}
+.projects h2 {
+    font-size: 2.5rem;
+    margin-bottom: calc(2.5rem * 1.5);
+}
+.projects h3 {
+    color: var(--blue);
+}
+.projects h4 {
+    font-size: 1rem;
+    font-family: var( 'Open Sans', sans-serif);
+    margin: 0;
+}
+.blackbox {
+    background-color: var(--black);
+    padding: 1rem;
+    font-size: 1rem;
+    line-height: 1.5;
+}
+.projects ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: flex-start;
+    gap: 1rem;
+    font-size: 1rem;
+}
+/*Contact section */
+
+#contact {
+
+    text-align: center;
+    margin: 0 auto;
+    padding: 3rem 0;
+    background-color: var(--white);
+    color: var(--black);
+}
+#contact p:last-child {
+    margin-top: 3rem;
+}
+
+
+/* navbar */
+nav {
+    font-family: 'Raleway', sans-serif;
+    font-size: 80%;
+    padding: 1rem;
+}
+nav h1 a {
+    font-family:'Open sans', sans-serif ;
+}
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-content: center;
+    gap: 2rem;
+}
+nav li:first-child {
+    flex-basis: 100%;
+    text-align: center;
+}
+nav a {
+    color: var(--black);
+    text-decoration: none;
+    display: block;
+}
+nav a:hover {
+    color: rgba(0, 0, 0, 0.594);
+}
+.button {
+    background-color: var(--blue);
+    padding: 0.5rem;
+    border-radius: 5px;
+    text-decoration: none;
+}
+.button:hover {
+    background-color: var(--hotblue);
+}
+.Cbutton {
+    color: var(--black);
+    background-color: var(--blue);
+    padding: 0.5rem;
+    border-radius: 5px;
+    text-decoration: none;
+}
+.Cbutton:hover {
+    color: rgba(0, 0, 0, 0.594);
+    background-color: var(--hotblue);
+}
+
+/* responsive design */
+@media (min-width:  850px) {
+    nav {
+        max-width: 1200px;
+        margin: 0 auto;
+    }
+    nav li:first-child {
+        flex-basis: auto;
+        text-align: left;
+        margin-right: auto;
+    }
+}
+
+footer {
+    color: var(--white);
+     background-color: var(--black);
+     text-align: center;
+     padding: 4rem 0;
+}
+footer ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 2rem 0;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-content: center;
+    gap: 3rem;
+    font-size: 3rem;
+}
+
+footer li {
+    text-align: center;
+}
+
+.projects iframe {
+    border: none;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+}
+
+figure {
+    margin: 0;
+    padding: 0;
+}
+figcaption ul{
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+.aboutme h2{
+    text-align: center;
+    color: var(--red);
+}
+.aboutme {
+    text-align: left;
+    background-color: var(--hotblue);
+    color: var(--white);
+    padding: 3rem 1rem;
+
+}
+
+.aboutme ul {
+    display: flex;
+    flex-flow: row wrap;
+    list-style-type: none;
+    gap: 1rem;
+    color: var(--black);
+    margin: 0;
+    padding: 0;
+}
+
+.aboutme p em{
+    color: #1100FF;
+}
+
+@media (max-width: 786px) {
+    footer ul{
+        list-style-type: none;
+        padding: 0;
+        margin: 2rem 0;
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: center;
+        align-content: center;
+        gap: 2rem;
+        font-size: 1rem;
+    }
+    footer {
+        padding: 2rem 0;
+    }
+    .ident {
+        display: flex;
+        line-height: 1rem;
+        font-size: 1rem;
+    }
+}
+
+.ident {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: left;
+    gap: 2rem;
+}
+
+.card {
+    text-align: center;
+    padding: 1rem 0;
+}
+
+img {
+    width: 100%;
+    padding: 1rem 0;
+    margin: 1rem;
+}
+
+.hobbies {
+    padding-top: 1rem;
+    margin: 1rem;
+}
+.hobbies h3 {
+    text-align: center;
+}

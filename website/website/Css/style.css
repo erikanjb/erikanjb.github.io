@@ -150,7 +150,7 @@ nav [class*="fa-"]:hover {
     background-color: rgb(151, 248, 248);
 }
 
-@media (min-width: 1200px){
+@media (min-width: 850px){
  nav{
     max-width: 1200px;
     margin: 0 auto;
@@ -214,7 +214,7 @@ nav [class*="fa-"]:hover {
     padding: 1rem;
 }
 
-@media (min-width: 1200px) {
+@media (min-width: 550px) {
     article {
         display:grid;
         grid-template-columns: repeat(10, 1fr);
@@ -238,7 +238,23 @@ nav [class*="fa-"]:hover {
     #projects ul {
         justify-content: flex-end;
     }
-     
+    
+    #projects .reverse .text {
+        grid-column: 1/7;
+        order: 2;
+        text-align: left;
+    }
+    
+    #projects .reverse img {
+        grid-column: 5/11;
+        grid-row: 1/2;
+    }
+    
+    #projects .reverse ul {
+        justify-content: flex-start;
+    }
+    
+    
     footer {
         text-align: center;
         padding: 4rem 0;
@@ -264,7 +280,7 @@ footer ul li a {
     text-decoration: none;
 }
 
-@media (min-width: 1200px) {
+@media (min-width: 850px) {
     nav {
         max-width: 1200px;
         margin: 0 auto;
